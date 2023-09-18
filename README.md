@@ -144,3 +144,21 @@ Here is step by step, how i get the flag.txt
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/e47d9cf7-dfc5-406b-b432-e295d4346b67)
 
 
+No will do, Redeemer
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/054ced0a-ae4a-4f89-95ac-2f029363e6f6)
+
+1. Which TCP port is open on the machine? 
+That how you rember, let's turn on the nmap, witch out this u can't get the answer for this question :P But in this lab, the port very hight, we need to use -p- to scan all port. Rember we you using switch -p- this scan take somethimes a few minutes, because nmap must scan all ports areound 65000, but if you don't want wate to mutch time use nmap -p- --min-rate 5000 <IP>
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/2bc0a6c6-6783-45e7-b0a5-9f76c5eef646)
+
+2.Which service is running on the port that is open on the machine? 
+We can know this from previouse scan, the answer is redis
+
+3.What type of database is Redis? Choose from the following options: (i) In-memory Database, (ii) Traditional Database.
+Google it, we can here find the answer
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/cec7e946-b40c-44c6-923d-70a479bb40d3)
+
+the answer is In-memory Database
