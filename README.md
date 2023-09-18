@@ -174,3 +174,29 @@ We need to use redis-cli to find switch to specify the hostname
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/052d9a8f-0ccf-49be-8329-b89b1917a798)
 
 6. Once connected to a Redis server, which command is used to obtain the information and statistics about the Redis server? 
+
+I can't find anything but after log in into the redis i tryed info, and got a lot of information
+
+7. What is the version of the Redis server being used on the target machine? 
+We need to analyz a lot output information, but i found this 
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/6b308c6b-2914-4ce2-a5c9-13993b06715d)
+
+8. Which command is used to select the desired database in Redis?
+This work in mysql or other database, we can select by command SELECT :P
+
+9. How many keys are present inside the database with index 0? 
+We can take information from info, under KeySpace
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/7f0e4038-f36c-4e76-93a6-68b3492680d4)
+
+10. Which command is used to obtain all the keys in a database?
+We need to google it, here's the results:
+The answer is KEYS *
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/c9d17fb1-3214-46fb-bd6d-f851fd915199)
+
+11. Submit root flag 
+We can get this flag by command GET flag
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/1266a074-00b8-4ff9-871a-e4917e147b58)
