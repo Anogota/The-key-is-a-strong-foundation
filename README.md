@@ -162,3 +162,15 @@ Google it, we can here find the answer
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/cec7e946-b40c-44c6-923d-70a479bb40d3)
 
 the answer is In-memory Database
+
+4.Which command-line utility is used to interact with the Redis server? Enter the program name you would enter into the terminal without any arguments. 
+We need go to into google and search something about it and i found on Redis CLI
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/8f5373e2-76f1-4e5f-abcc-cc26056dd23b)
+
+5. Which flag is used with the Redis command-line utility to specify the hostname? 
+We need to use redis-cli to find switch to specify the hostname
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/052d9a8f-0ccf-49be-8329-b89b1917a798)
+
+6. Once connected to a Redis server, which command is used to obtain the information and statistics about the Redis server? 
