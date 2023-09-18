@@ -100,3 +100,47 @@ If u can't figure out what command is this, google it, here is the answer
 Here is step by step how i get the flag.txt
 
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/1ce6aeaf-5f1c-43cf-b770-99db12ae22ae)
+
+
+No we will do Dancing, this a Windows machine
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/1b304331-8d2a-4272-bc1a-474176a1378a)
+
+1. What does the 3-letter acronym SMB stand for? 
+I don't rember this acronym, let google it, we got this:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/bcde07ab-c689-4c81-975f-97f3e1430331)
+
+2. What port does SMB use to operate at? 
+Let's turn on nmap and check on what port SMB running 
+Here's the results of nmap, on this machine are many ports 
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/bf8ee7c7-ccdd-4f1f-949d-1ff958027c68)
+
+But the answer for the question is 445
+
+3. What is the service name for port 445 that came up in our Nmap scan? 
+We can get the answer for this question from previouse scan.
+
+4. What is the 'flag' or 'switch' that we can use with the smbclient utility to 'list' the available shares on Dancing? 
+We can get this from smbclient --help, here is the answer:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/a1badedf-e6a3-47ed-b62b-285edb56250a)
+
+5.How many shares are there on Dancing? 
+Let's use what we learn, smbclient -L <IP>, and we got this.
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/f177e21a-967a-437b-b31d-16729e9e9e77)
+
+6. What is the name of the share we are able to access in the end with a blank password? 
+We can also know this from previouse screan, the answer is WorkShares
+
+7.What is the command we can use within the SMB shell to download the files we find? 
+The command is the same like on FTP, get
+
+8. Submit root flag 
+Here is step by step, how i get the flag.txt
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/e47d9cf7-dfc5-406b-b432-e295d4346b67)
+
+
