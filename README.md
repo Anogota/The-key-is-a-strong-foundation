@@ -333,3 +333,10 @@ The show collections Command
 If you’re using the mongo shell, the quickest way to get a list of collections is to use the show collections command. This command retrieves a list of collections and views in the current database.
 
 7.What is the command used for dumping the content of all the documents within the collection named flag in a format that is easy to read? 
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/95d631a1-3b98-499c-a92f-8ab42ef14ec4)
+
+8.Submit root flag
+Here's how i got, the flag, step by step.
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/10febec4-1b38-40d6-935b-9b6ebbd77e06)
