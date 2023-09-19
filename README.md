@@ -301,3 +301,35 @@ Here is the flag:
 Let's go another lab:
 
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/32c640c1-c2ca-4c09-990a-8ad0f0d26a6e)
+
+The first task is:
+1. How many TCP ports are open on the machine? 
+Let's check this by nmap
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/1aaf3293-82cb-4370-b5fd-f5fd305cea29)
+
+Here what i found, only 2 ports are open on the machine.
+First is SSH and the secend is MongboDB
+
+2. Which service is running on port 27017 of the remote host? 
+Now we got the database MongboDB, here what's is mongo:MongboDB is an open source database management system (DBMS) that uses a docoument-oriented database model which supports various forms of data.
+We can find on this website, more about exploitation the mongoDB: https://book.hacktricks.xyz/network-services-pentesting/27017-27018-mongodb
+
+We can find answer for this question in previouse scan: MongoDB 3.6.8
+
+3. What type of database is MongoDB? (Choose: SQL or NoSQL) 
+MongoDB is a NoSQL distributed database program. Because data doesn't need to fit within the confines of a strict relationship, MongoDB can operate as a general data store. This database provides several advantages. In this type of database, data is stored in MongoDB and maps to a flexible schema.
+
+4.What is the command name for the Mongo shell that is installed with the mongodb-clients package? 
+We can check this on hacktricks:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/01c49f68-c25b-4b95-ac4a-4f63d1db2f84)
+
+5. What is the command used for listing all the databases present on the MongoDB server? (No need to include a trailing ;)
+I also found this on hacktricks, this website is very helpful, u can list all database by command: show dbs
+
+6.What is the command used for listing out the collections in a database? (No need to include a trailing ;) 
+The show collections Command
+If you’re using the mongo shell, the quickest way to get a list of collections is to use the show collections command. This command retrieves a list of collections and views in the current database.
+
+7.What is the command used for dumping the content of all the documents within the collection named flag in a format that is easy to read? 
