@@ -239,4 +239,65 @@ we can try this by trial and error method, after few secend i found this is Admi
 
 8. Submit root flag 
 Here is the command how we can, log in into RDP
-xfreerdp /f /u:Administrator /v:10.129.1.13
+xfreerdp /f /u:Administrator /cert:ignore /v:10.129.1.13
+And after when we connect to RDP, we can see on Desktop the flag
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/76915bb5-67cd-477d-ad8d-08a7b1923406)
+
+
+The next machine is:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/04972dfa-83bf-4517-9dce-4d55b4d0a884)
+
+1.Directory Brute-forcing is a technique used to check a lot of paths on a web server to find hidden pages. Which is another name for this? (i) Local File Inclusion, (ii) dir busting, (iii) hash cracking. 
+This is so simply, the answer for this question is dir busting beacause: Directory bursting (also known as directory brute forcing) is a web application technology used to find and identify possible hidden directories in websites. This is done with the aim of finding forgotten or unsecured web directories to see if they are vulnerable to exploitation.
+
+2.What switch do we use for nmap's scan to specify that we want to perform version detection 
+We can check this by command nmap -h 
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/1947da03-5f9d-4f10-be4e-6795fb124612)
+
+3. What does Nmap report is the service identified as running on port 80/tcp? 
+We can check this by using nmap, here is the results:
+And now we know on port 80 running http
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/c0cf3054-3072-4f9f-848e-5b3b138e0070)
+
+4. What server name and version of service is running on port 80/tcp? 
+From the previouse scan we know this is a nginx 1.14.2
+Here is what is this nginx, from the website:NGINX is a well known open source project originally written by Igor Sysoev, a Russian engineer. Igor started the project in 2002 and made it public in 2004. Since that time NGINX has become a de‑facto standard for high‑performance, scalable websites. Tens of millions of active websites use NGINX, including 1 million busiest websites in the world. Companies like Airbnb, Box, Dropbox, Netflix, Tumblr, WordPress.com, and many others deploy NGINX for scalability and performance reasons.
+
+5.What switch do we use to specify to Gobuster we want to perform dir busting specifically
+This is a dir.
+
+6.When using gobuster to dir bust, what switch do we add to make sure it finds PHP pages? 
+gobuster -h, there we can find this: the answer is -x php
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/95260aa6-316a-4601-9416-8d4800000dda)
+
+7. What page is found during our dir busting activities? 
+We need to turn on gobuster and check this out, by this command:└─$ gobuster dir -w /usr/share/wordlists/dirb/common.txt -u http://10.129.196.196/ -x php
+Here what i found, and also this is a answer for the question:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/1d3baad4-6c26-47eb-914d-9350fbb9794e)
+
+8. What is the HTTP status code reported by Gobuster for the discovered page? 
+The status code is 200, that how can see on previouse screan.
+After check this page, i got the login panel.
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/5d837fbc-ce10-478e-91e1-3c86fc32a7a1)
+
+
+9. Submit root flag 
+We can do this by checking by typing random things until we log in into the web, or use hydra to bruteforce the login page, here how can do it.
+hydra -l /usr/share/wordlists/rockyou.txt -p /usr/share/wordlists/rockyou.txt 10.129.196.196 http-post-form "/admin.php:username=^USER^&password=^PASS^:Wrong username or password."
+
+You just need to analyze it and adjust it according to your needs
+
+Here is the flag:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/326ec034-d259-4c7a-ad89-d7160813c94b)
+
+Let's go another lab:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/32c640c1-c2ca-4c09-990a-8ad0f0d26a6e)
