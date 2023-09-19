@@ -200,3 +200,43 @@ The answer is KEYS *
 We can get this flag by command GET flag
 
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/1266a074-00b8-4ff9-871a-e4917e147b58)
+
+
+Now we will do lab:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/d2028226-dacc-44ac-96be-cb9ac8110128)
+
+1. What does the 3-letter acronym RDP stand for? 
+We need to ask google, what he thinking about it, let's do this.
+I got the answer for the question, this is a Remote Desktop Protocol 
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/befc100e-8311-419d-8d6e-23bca4315150)
+
+2. What is a 3-letter acronym that refers to interaction with the host through a command line interface? 
+If u don't know the answer google it, but this is a CLI.
+A command-line interface (CLI) is a text-based user interface (UI) used to run programs, manage computer files and interact with the computer. Command-line interfaces are also called command-line user interfaces, console user interfaces and character user interfaces.
+
+3. What about graphical user interface interactions? 
+A graphics-based operating system interface that uses icons, menus and a mouse (to click on the icon or pull down the menus) to manage interaction with the system.
+
+4. What is the name of an old remote access tool that came without encryption by default and listens on TCP port 23? 
+We can check this by turn on nmap, but i you maybe rember this is a telnet, always working on 23 port.
+Here is the output from nmap, result, and that how i wrote on port 23 is telnet
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/9c5caf7f-52b3-43db-88b3-0a0a6f36d467)
+
+5.What is the name of the service running on port 3389 TCP? 
+We can take this from previouse scan, there we can see what's working on port 3389, this is a ms-wbt-server, is a RDP
+here is the link, you can find there many ways to exploit RDP. https://book.hacktricks.xyz/network-services-pentesting/pentesting-rdp
+
+6. What is the switch used to specify the target host's IP address when using xfreerdp? 
+We can find this by command: help -h
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/e312c9c6-e761-4eac-a15f-e0fc507b32eb)
+
+7. What username successfully returns a desktop projection to us with a blank password?
+we can try this by trial and error method, after few secend i found this is Administrator, this user don't need any password to log in into RDP.
+
+8. Submit root flag 
+Here is the command how we can, log in into RDP
+xfreerdp /f /u:Administrator /v:10.129.1.13
