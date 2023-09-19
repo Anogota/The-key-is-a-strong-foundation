@@ -340,3 +340,39 @@ If you’re using the mongo shell, the quickest way to get a list of collections
 Here's how i got, the flag, step by step.
 
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/10febec4-1b38-40d6-935b-9b6ebbd77e06)
+
+
+The next lab is:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/c049dade-f7bc-4c61-8977-aac8f7b0404d)
+
+1. What is the default port for rsync? 
+We need to google it, here's what i found:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/9e434f66-52e8-4016-b175-56bd3c47f2e1)
+
+2. How many TCP ports are open on the remote host?
+We need to turn on the nmap, and check what's running on the server, only one port are open:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/106bc569-3ca2-41ae-8904-b22f855d5653)
+
+3. What is the protocol version used by rsync on the remote machine?
+We can check this on the previouse screan, the version is 31
+
+4. What is the most common command name on Linux to interact with rsync? 
+I tryed rsync and it's work
+
+5.What credentials do you have to pass to rsync in order to use anonymous authentication? anonymous:anonymous, anonymous, None, rsync:rsync 
+We need to google it beacuse i have no idea. The answer is none 
+
+6.What is the option to only list shares and files on rsync? (No need to include the leading -- characters) 
+--list-only, with this command you can list shares and files on rsync
+
+7. Submit root flag 
+Here's how i did step by step:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/3a168670-4cef-4df1-b5bf-e47e94f94a74)
+
+And we got this, we solve all labs, cool :P
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/3a0721f9-6c51-471e-bf43-7355bf4d1a05)
