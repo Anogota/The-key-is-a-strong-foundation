@@ -414,3 +414,11 @@ Now we know some user, like always when you do recon let's save this user maybe 
 And i also read password_policy.pdf there we can find Default Password: funnel123#!#
 
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/e9d5adb7-a2d1-48a0-8c9c-91eae710238d)
+
+4. Which user has not changed their default password yet? 
+First what i did is save all ur from e-mail and create the list of this user. 
+Then i use hydra to bruteforce this user by this password: funnel123#!#, also this password have own list, beacuase when i tryed insert this password i got some error and that why i decided to create for this passowrd file.
+And now we got the answer for question:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/e798b16d-32cf-434b-9653-1cc0915bc613)
+
