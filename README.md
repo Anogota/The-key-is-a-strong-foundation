@@ -376,3 +376,41 @@ Here's how i did step by step:
 And we got this, we solve all labs, cool :P
 
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/3a0721f9-6c51-471e-bf43-7355bf4d1a05)
+
+
+The next lab is:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/448261fa-72f8-451b-a45f-7d91f2a81eaa)
+
+1. How many TCP ports are open? 
+First we need to turn on the nmap and check it what's running on the server.
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/d6f35e11-0df3-45db-8f4e-e1d4e4cb23e2)
+
+Is 2 port are open, FTP and SSH, looks good but also intresting beacause i don't see HTTP
+
+2. What is the name of the directory that is available on the FTP server? 
+I did another scan but with, another switch -sCV and i found something intresting about FTP also here is the command: nmap -sCV -p 21 <IP>
+Also in this scan we can find answer for our question:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/90e133c6-c3de-4574-abf1-3dc51f87a8ee)
+
+And there you can in this scan, we can as anonymous, let's did it and check what's intresting is on the FTP.
+
+3. What is the default account password that every new member on the "Funnel" team should change as soon as possible? 
+First we need to login as anonymouse.
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/bb9fd979-18c8-4676-a169-21ccd4bd0ed8)
+
+Rember when you login as Anonymouse u don't need any password, let the password empty. On the FTP server we can some directory mail_backup, let's go into this directory, there we can see 2 files, download it by command: get <file> on your own computer
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/0684b45b-b0d8-4696-8c44-6bc1ea481989)
+
+I got instresting message from root:
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/765ed497-2a77-4f7e-8f10-b7ed072564f6)
+
+Now we know some user, like always when you do recon let's save this user maybe we can use this later to bruteforce SSH.
+And i also read password_policy.pdf there we can find Default Password: funnel123#!#
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/e9d5adb7-a2d1-48a0-8c9c-91eae710238d)
