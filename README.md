@@ -1,4 +1,4 @@
-Here i will do every lab from starting point (the key is a strong foundation)
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/4ea2a103-c24f-4349-9185-22d56f892e3e)Here i will do every lab from starting point (the key is a strong foundation)
 
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/799d0260-e2ad-43d9-84df-b78e21efe959)
 
@@ -422,3 +422,16 @@ And now we got the answer for question:
 
 ![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/e798b16d-32cf-434b-9653-1cc0915bc613)
 
+5. Which service is running on TCP port 5432 and listens only on localhost? 
+This was many googling, i found this netstat -tulpn by with this command i don't get any specially output.
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/a4be0050-e8c5-4e2d-939e-fe796a4e92b8)
+
+But also i found this command less /etc/services, with this you can know what's running on port and after few secend i know what's running on port 5432 this is a postregresql;
+
+![obraz](https://github.com/Anogota/The-key-is-a-strong-foundation/assets/143951834/e74a85b2-7469-4c5c-bc5a-5446877f0de8)
+
+6. Since you can't access the previously mentioned service from the local machine, you will have to create a tunnel and connect to it from your machine. What is the correct type of tunneling to use? remote port forwarding or local port forwarding? 
+This will be local port forwarding because it is used to let a user connect from the local computer to another serve
+
+7. What is the name of the database that holds the flag? 
